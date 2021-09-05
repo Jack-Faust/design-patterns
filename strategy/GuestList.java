@@ -8,7 +8,7 @@ import java.util.ArrayList;
  */
 public class GuestList {
     private String title;
-    private ArrayList<String> people = new ArrayList<String>();
+    private ArrayList<String> people;
     private SearchBehavior searchBehavior;
 
     /**
@@ -17,6 +17,7 @@ public class GuestList {
      */
     public GuestList(String title) {
         this.title = title;
+        this.people = new ArrayList<>();
         this.searchBehavior = new LinearSearch();
     }
     /**

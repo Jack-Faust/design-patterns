@@ -14,6 +14,10 @@ public class BinarySearch implements SearchBehavior{
      */
     public boolean contains(ArrayList<String> data, String item) {
     
+        /*
+        *binary search Algorithm found online
+        *https://www.geeksforgeeks.org/java-program-to-perform-binary-search-on-arraylist/
+        */
         int mid = 0;
         int left = 0;
         int right = data.size();
