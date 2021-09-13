@@ -38,7 +38,6 @@ public class Store implements Observer{
      */
     public void display() {
         System.out.println("Top 5 Best Sellers:");
-        System.out.println(bestSellers.size());
         for (Book book : bestSellers) {
             System.out.println(book.toString());
         }

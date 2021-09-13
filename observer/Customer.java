@@ -34,7 +34,6 @@ public class Customer implements Observer{
      */
     public void display() {
         System.out.println("Wish List:");
-        System.out.println(wishList.size());
         for (int i = 0; i < this.wishList.size(); ++i) {
             System.out.println(this.wishList.get(i).toString());
         }
