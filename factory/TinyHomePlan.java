@@ -10,8 +10,6 @@ public class TinyHomePlan extends HousePlan{
      */
     public TinyHomePlan() {
         super(1,5,200);
-        setMaterials();
-        setFeatures();
     }
     /**
      * adds materials as strings to materials arrayList

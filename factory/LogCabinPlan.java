@@ -10,8 +10,7 @@ public class LogCabinPlan extends HousePlan{
      */
     public LogCabinPlan() {
         super(2, 10, 1800);
-        setMaterials();
-        setFeatures();
+
     }
     /**
      * adds materials as strings to materials arrayList

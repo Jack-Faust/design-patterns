@@ -10,8 +10,7 @@ public class ContemporaryPlan extends HousePlan{
      */
     public ContemporaryPlan() {
         super(5, 40, 3000);
-        setMaterials();
-        setFeatures();
+
     }
     /**
      * adds materials as strings to materials arrayList
