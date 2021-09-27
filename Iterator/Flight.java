@@ -1,5 +1,9 @@
 package Iterator;
 
+/**
+ * class Flights to be able to create flights
+ * @author Ronald Faust
+ */
 public class Flight {
     
     private String flightNum;
@@ -8,6 +12,14 @@ public class Flight {
     private int duration;
     private int transfers;
 
+    /**
+     * Constructor for Flights
+     * @param flightNum the flight number
+     * @param from where the flight is from
+     * @param to where the flight is going
+     * @param duration length of the flight
+     * @param transfers number of transfers 
+     */
     public Flight(String flightNum, String from, String to, int duration, int transfers){
         this.flightNum = flightNum;
         this.from = from;
@@ -15,23 +27,38 @@ public class Flight {
         this.duration = duration;
         this.transfers = transfers;
     }
-
+    /**
+     * Accessor for from variable
+     * @return from variable
+     */
     public String getFrom() {
         return this.from;
     }
-
+    /**
+     * Accessor for To variable
+     * @return  to variable 
+     */
     public String getTo() {
         return this.to;
     }
-
+    /**
+     * Accessor for duration variable
+     * @return duration variable 
+     */
     public int getDuration() {
         return this.duration;
     }
-
+    /**
+     * Accessor for  transfers variable
+     * @return transfers variable 
+     */
     public int getNumTransfers() {
         return this.transfers;
     }
-
+    /**
+     * ToString method to return flight information in string form
+     * @return String of flight info
+     */
     public String toString() {
         String ret;
         ret = "Flight Number: " + this.flightNum;
