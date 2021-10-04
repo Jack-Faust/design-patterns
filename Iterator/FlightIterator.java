@@ -1,4 +1,4 @@
-package Iterator;
+package iterator;
 
 /**
  * class FlightIterator to be able to iterate over flights array

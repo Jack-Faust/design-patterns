@@ -1,4 +1,4 @@
-package Iterator;
+package iterator;
 
 /**
  * interface Iterator to make FlightIterators 

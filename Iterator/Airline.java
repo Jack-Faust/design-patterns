@@ -1,4 +1,4 @@
-package Iterator;
+package iterator;
 
 /**
  * class Airline to be able to create airlines that have a title and collection of flights

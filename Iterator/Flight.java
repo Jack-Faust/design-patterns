@@ -1,4 +1,4 @@
-package Iterator;
+package iterator;
 
 /**
  * class Flights to be able to create flights
