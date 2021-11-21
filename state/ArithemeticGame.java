@@ -54,7 +54,6 @@ public class ArithemeticGame {
         System.out.println(firstNum + " "+operation+ " " + secondNum);
         int response = key.nextInt();
         key.nextLine();
-        key.close();
 
         if (response == answer) {
             ++score;
