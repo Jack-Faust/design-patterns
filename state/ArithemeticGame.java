@@ -1,6 +1,10 @@
 package state;
 import java.util.Scanner;
 
+/**
+ * Class to alter state of game and to generate questions
+ * @author Ronald Faust
+ */
 public class ArithemeticGame {
     
     private Scanner key;
@@ -10,6 +14,9 @@ public class ArithemeticGame {
     private State state;
     private int score;
 
+    /**
+     * Constructor for Arithmetic Game
+     */
     public ArithemeticGame() {
         easyState = new Easy(this);
         mediumState = new Medium(this);
@@ -19,6 +26,9 @@ public class ArithemeticGame {
         key = new Scanner(System.in);
     }
 
+    /**
+     * Method generates a question comprised of 2 random numbers and a random operation from the appropriate state
+     */
     public void pressQuestionButton() {
         int firstNum = state.getNum();
         int secondNum = state.getNum();
@@ -64,18 +74,32 @@ public class ArithemeticGame {
         }
     }
 
+    /**
+     * mutator for state variable
+     * @param state state to change the state of the game to 
+     */
     public void setState(State state) {
         this.state = state;
     }
 
+    /**
+     * Accessor for Easy state
+     * @return Easy state
+     */
     public State getEasyState() {
         return easyState;
     }
-
+    /**
+     * Accessor for Medium state
+     * @return Medium state
+     */
     public State getMediumState() {
         return mediumState;
     }
-
+    /**
+     * Accessor for Hard state
+     * @return Hard state
+     */
     public State getHardState() {
         return hardState;
     }
